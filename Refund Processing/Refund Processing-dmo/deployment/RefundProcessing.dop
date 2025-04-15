@@ -11,6 +11,6 @@
     <value><![CDATA["RefundProcessingDecision"]]></value>
   </tags>
   <tags key="exposedAtRuntime">
-    <value><![CDATA[false]]></value>
+    <value><![CDATA[true]]></value>
   </tags>
 </com.ibm.rules.studio.model.decisionservice:Operation>

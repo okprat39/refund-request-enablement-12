@@ -1,0 +1,1 @@
+{"operationId":"null","body":{"theRefundRequest":{"reason":"NoLongerNeeded","goodsCondition":"WornOrDamaged","daysSinceOrderDelivered":22},"theOrder":{"subtotal":32.25,"salesTax":3.23,"shippingCost":2.5,"goodsCategories":["MusicOrVideo"]}}}

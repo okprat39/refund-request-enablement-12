@@ -1,0 +1,117 @@
+
+package myModel;
+
+
+class GoodsCategory
+        extends java.lang.Enum
+        #de.generated
+{
+    domain {static Downloadable, static HazardousMaterial, static MusicOrVideo, static Perishable}
+    static final readonly myModel.GoodsCategory Downloadable;
+    static final readonly myModel.GoodsCategory HazardousMaterial;
+    static final readonly myModel.GoodsCategory MusicOrVideo;
+    static final readonly myModel.GoodsCategory Perishable;
+}
+
+class GoodsCondition
+        extends java.lang.Enum
+        #de.generated
+{
+    domain {static InOriginalPackage, static OpenBox, static WornOrDamaged}
+    static final readonly myModel.GoodsCondition InOriginalPackage;
+    static final readonly myModel.GoodsCondition OpenBox;
+    static final readonly myModel.GoodsCondition WornOrDamaged;
+}
+
+class Order
+        #de.generated
+{
+    java.util.List goodsCategories domain 0,* class myModel.GoodsCategory
+                #update;
+    double salesTax
+                #update;
+    double shippingCost
+                #update;
+    double subtotal
+                #update;
+    Order(java.util.List goodsCategories domain 0,* class myModel.GoodsCategory, 
+        double salesTax, 
+        double shippingCost, 
+        double subtotal)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Order()
+                #dataio.default;
+    void addTo_goodsCategories(myModel.GoodsCategory goodsCategories)
+                property collectionAttribute "goodsCategories"
+                #update;
+    void clear_goodsCategories()
+                property collectionAttribute "goodsCategories"
+                #update;
+    void removeFrom_goodsCategories(myModel.GoodsCategory goodsCategories)
+                property collectionAttribute "goodsCategories"
+                #update;
+    void set_goodsCategories(java.util.Collection goodsCategories domain 0,* class myModel.GoodsCategory)
+                property collectionAttribute "goodsCategories"
+                #update;
+}
+
+class RefundDecision
+        extends java.lang.Enum
+        #de.generated
+{
+    domain {static Approved, static Denied, static Manual}
+    static final readonly myModel.RefundDecision Approved;
+    static final readonly myModel.RefundDecision Denied;
+    static final readonly myModel.RefundDecision Manual;
+}
+
+class RefundRequest
+        #de.generated
+{
+    double daysSinceOrderDelivered
+                #update;
+    myModel.GoodsCondition goodsCondition
+                #update;
+    myModel.RefundRequestReason reason
+                #update;
+    RefundRequest(double daysSinceOrderDelivered, myModel.GoodsCondition goodsCondition, myModel.RefundRequestReason reason)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    RefundRequest()
+                #dataio.default;
+}
+
+class RefundRequestReason
+        extends java.lang.Enum
+        #de.generated
+{
+    domain 
+    {
+        static AccidentalOrder,
+        static DamagedShipment,
+        static Defective,
+        static DidNotMeetExpectations,
+        static DoesNotMatchWebsiteDescription,
+        static ExcessiveAmount,
+        static LateDelivery,
+        static NoLongerNeeded,
+        static WrongProductOrdered,
+        static WrongProductShipped
+    }
+    static final readonly myModel.RefundRequestReason AccidentalOrder;
+    static final readonly myModel.RefundRequestReason DamagedShipment;
+    static final readonly myModel.RefundRequestReason Defective;
+    static final readonly myModel.RefundRequestReason DidNotMeetExpectations;
+    static final readonly myModel.RefundRequestReason DoesNotMatchWebsiteDescription;
+    static final readonly myModel.RefundRequestReason ExcessiveAmount;
+    static final readonly myModel.RefundRequestReason LateDelivery;
+    static final readonly myModel.RefundRequestReason NoLongerNeeded;
+    static final readonly myModel.RefundRequestReason WrongProductOrdered;
+    static final readonly myModel.RefundRequestReason WrongProductShipped;
+}
+

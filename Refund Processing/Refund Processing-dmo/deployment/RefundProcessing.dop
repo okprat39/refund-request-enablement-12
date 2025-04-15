@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" rulesetName="RefundProcessing" targetRuleProjectName="Refund Processing-dmo">
+  <name>RefundProcessingDecision</name>
+  <uuid>6a652f57-fcb8-41f7-adb1-ff9c98c32def</uuid>
+  <decisionModel href="../rules/Refund%20Processing.dmo#f4f04fcc-36e3-4116-a814-f7b1a9340117"/>
+  <targetRuleProject href="../../Refund%20Processing-dmo#ee090aa2-bc45-402d-9fdc-3c5748dbab50"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["RefundProcessingDecision"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[false]]></value>
+  </tags>
+</com.ibm.rules.studio.model.decisionservice:Operation>
